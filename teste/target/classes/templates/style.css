@@ -1,0 +1,374 @@
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal-container-cadastro {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+.modal-container-recuperacao {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+.modal {
+    margin: auto;
+    max-width: 500px;
+    position: fixed;
+    width: 400px;
+    height: 770px;
+    background: rgba(54, 52, 50, 1);
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalCadastro {
+    position: fixed;
+    width: 470px;
+    height: 836px;
+    background: rgba(54, 52, 50, 1);
+    border-radius: 10px;
+}
+.modalRecuperacao {
+    position: fixed;
+    width: 400px;
+    height: 580px;
+    background: rgba(54, 52, 50, 1);
+    border-radius: 10px;
+}
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+}
+.active {
+    display: flex;
+    justify-content: center;
+}
+.active .modal {
+    animation: modal 0.4s;
+}
+.active .modalCadastro {
+    animation: modal 0.4s;
+}
+
+.modalRecuperacao {
+    animation: modal 0.4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes modalCadastro {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.modal-label {
+    font-family: "Cairo";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    width: 100px;
+    color: #f5f5f5;
+}
+.inputEmail {
+    width: 345px;
+    height: 56px;
+    left: 52px;
+    top: 245px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 10px;
+    font-family: "Cairo";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+}
+.inputRecup {
+    width: 345px;
+    height: 56px;
+    left: 52px;
+    top: 245px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 10px;
+    font-family: "Cairo";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+}
+.inputRecuperaçao {
+    width: 345px;
+    height: 56px;
+    left: 52px;
+    top: 245px;
+}
+.inputSenha {
+    width: 345px;
+    height: 55px;
+    left: 53px;
+    top: 396px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 10px;
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btns button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.btnRecup {
+    position: absolute;
+    height: 70px;
+    width: 291px;
+    top: 466px;
+    left: 60px;
+    border-radius: 20px;
+    background: rgba(242, 183, 5);
+    font-family: "Cairo";
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 45px;
+    color: #020202;
+}
+.Entrar {
+    top: 558px;
+    left: 54px;
+    border-radius: 20px;
+    background: rgba(242, 183, 5, 0.8);
+    font-family: "Cairo";
+    font-weight: 700;
+    font-style: normal;
+    color: #020202;
+}
+.btn {
+    display: flex;
+    width: 260px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button#entratBtn:active {
+    opacity: 0.8;
+}
+button#entratBtn[disabled] {
+    opacity: 0.7;
+}
+.EntrarCadastro {
+    position: absolute;
+    height: 70px;
+    width: 291px;
+    top: 740px;
+    left: 90px;
+    border-radius: 20px;
+    background: rgba(242, 183, 5, 0.8);
+    font-family: "Cairo";
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 45px;
+    color: #020202;
+}
+.test {
+    margin-left: 7%;
+    margin-top: 30%;
+    width: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.testCadastro {
+    margin-left: 11%;
+    margin-top: 0px;
+    width: 71px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.testRecup {
+    margin-left: 7%;
+    margin-top: 121px;
+    width: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.cadastrar {
+    font-family: "Cairo";
+    font-style: normal;
+    font-weight: 400;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    margin-top: 40px;
+}
+.btn-cadastro {
+    width: 90px;
+}
+.recuperacao {
+    font-family: "Cairo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 57px;
+    color: #f2f2f2;
+}
+.btn-recu {
+    display: flex;
+    width: 250px;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+.logoModal {
+    margin-left: 93%;
+}
+.logoModalCadastro {
+    margin-left: 93%;
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 320px) {
+    .modal-container {
+        top: 0;
+    }
+    .modal-container-cadastro {
+        top: 0;
+    }
+    .modal {
+        width: 280px;
+        height: 500px;
+        top: 50%;
+    }
+    .modalCadastro {
+        width: 280px;
+        height: 450px;
+    }
+    .modalRecuperacao {
+        width: 280px;
+        height: 320px;
+        top: 50%;
+    }
+    .modal-label {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .inputEmail {
+        width: 240px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .inputSenha {
+        width: 240px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .inputRecup {
+        width: 240px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .Entrar {
+        height: 50px;
+        width: 180px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .btnRecup {
+        height: 45px;
+        width: 150px;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .EntrarCadastro {
+        height: 45px;
+        width: 160px;
+        top: 88%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .test {
+        margin-left: 5%;
+        margin-top: 10%;
+        width: 50px;
+    }
+    .testCadastro {
+        margin-left: 5%;
+        margin-top: 15px;
+        width: 50px;
+    }
+    .testRecup {
+        margin-left: 5%;
+        margin-top: 10%;
+        width: 50px;
+    }
+    .cadastrar {
+        width: 250px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .logoModal {
+        margin-left: 35%;
+    }
+    .logoModalCadastro {
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+    .recuperacao {
+        width: 120px;
+        height: 35px;
+        left: 48%;
+        top: 52%;
+        font-size: 13px;
+    }
+}
